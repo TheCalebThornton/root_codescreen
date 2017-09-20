@@ -38,11 +38,14 @@
 
     start, stop, speed, driver(belongs_to/many-1)
     
-  **Note** Typically I would have a class/table recording which records have been read based on a unique identifier.
+  **Note** 
+  
+    Typically I would have a class/table recording which records have been read based on a unique identifier.
     This would allow me to prevent recording duplicate data if the process were to fail in the middle. <- Alternative
     to having the file persisted as one large transaction. Inefficent in scenarios with large files.
     However, since the problem is simplified there is no unique identifier so I will assume this functionality is to be 
     left out. 
+    
   **End Note**
 
   driving_record_service class
